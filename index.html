@@ -2,79 +2,192 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Budapesti látnivalók</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
-        body {
-             background-color: lightpink;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .container {
+            max-width: 960px;
         }
 
         .container-fluid {
             height: 100vh;
             background-color: lightpink;
         }
+
+ 
+
+        .site-header {
+            background-color: rgba(0, 0, 0, .85);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+        }
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .flex-equal>* {
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal>* {
+                flex: 1;
+            }
+        }
     </style>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Budapesti látnivalók</title>
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
 </head>
 
 <body>
 
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">Budapesti látnivalók</h1>
+                <p class="lead fw-normal">Ezen az oldalon megtektinheti a legfontosabb budapesti látnivalókat</p>
+            </div>
+        </div>
 
-    <div class="container-fluid">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">Parlament</h2>
+                    <p class="lead">Az Országház Budapest egyik legismertebb középülete, a Magyar Országgyűlés és egyes
+                        intézményeinek (például Országgyűlési Könyvtár) székhelye.</p>
+                </div>
+                <div class="bg-light shadow-sm mx-auto"
+                    style="width: 80%; height: 200px; border-radius: 21px 21px 0 0;background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Parliament_Building%2C_Budapest%2C_outside.jpg/1200px-Parliament_Building%2C_Budapest%2C_outside.jpg) no-repeat;background-size: 100%;">
+                </div>
+            </div>
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Hősök tere</h2>
+                    <p class="lead">A Hősök tere Budapest legtágasabb, legnagyobb hatású tere a XIV. kerületben, szűkebb
+                        értelemben véve a Millenniumi emlékművet jelöli.
+                        A Hősök tere az előtte fekvő Andrássy úttal együtt a világörökség része.</p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto"
+                    style="width: 80%; height: 200px; border-radius: 21px 21px 0 0;background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Heroes_Square_Budapest_2010_01.jpg/1200px-Heroes_Square_Budapest_2010_01.jpg) no-repeat;background-size: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">Budavári palota</h2>
+                    <p class="lead">A Budavári Palota (németül Burgpalast, törökül Budin Kalesi vagy Budin Sarayi)
+                        Budapest egyik legfőbb kulturális és turisztikai központja, egyben a volt királyi palota. A
+                        Budai Várnegyed részeként 1987 óta része Budapest világörökségi helyszíneinek.</p>
+                </div>
+                <div class="bg-light shadow-sm mx-auto"
+                    style="width: 80%; height: 200px; border-radius: 21px 21px 0 0;background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/River_Beatrice_%28ship%2C_2007%29_005.jpg/1920px-River_Beatrice_%28ship%2C_2007%29_005.jpg) no-repeat;background-size: 100%;">
+                </div>
+            </div>
+        </div>
 
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h3>Helo helo szia lenne egy nagyon fontos kérdésem</h3>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>Helo helo szia lenne egy nagyon fontos kérdésem</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h3>Még egy kicsit lentebb</h3>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>Még egy kicsit lentebb</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h3>Na még egy kicsit</h3>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>Na még egy kicsit</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h3>Már mindjárt ott vagy :)</h3>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>Már mindjárt ott vagy :)</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h3>Egy rugóra függesztett 40 g tömegű test rezgéseinek periódusideje 0,8 s. Mekkora a rugó rugóállandója?</h3>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>Egy rugóra függesztett 40 g tömegű test rezgéseinek periódusideje 0,8 s. Mekkora a rugó
+                    rugóállandója?</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h3>Nem erre a kérdésre számítottál igaz?</h3>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>Nem erre a kérdésre számítottál igaz?</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h3>Akkor jöhet a valódi fontos kérdés.</h3>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>Akkor jöhet a valódi fontos kérdés.</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h1>3</h1>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>3</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h1>2</h1>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>2</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
-            <h1>1</h1>
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+                <h3>1</h3>
+            </div>
         </div>
-        <div class="h-100 d-flex justify-content-center align-items-center" style=" background-color: lightpink;">
+        <div class="container-fluid">
+            <div class="h-100 d-flex justify-content-center align-items-center">
                 <h3>Hozzám jönnél feleségül?</h3>
+            </div>
         </div>
-    </div>
+    </main>
 
-   
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <small class="d-block mb-3 text-muted">&copy; 2018–2022</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
 </body>
 
 </html>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-crossorigin="anonymous"></script>
